@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-low {
+    background-color: #F7F8F8;
+    border-radius: 20px;
+}
+
+.bg-high {
+    background-color: #0307121A;
+    border-radius: 20px;
+}
+
+.bg-selected {
+    background-color: #1DD100;
+    border-radius: 20px;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+    </style>
 </head>
 <body class="font-Raleway">
     <nav>
@@ -55,7 +77,7 @@
         <h2 class="text-[#1DD100] font-semibold text-[64px]">P Paribahan</h2>
         <p class="text-white mt-4">
           "P Paribahan" is a popular transportation company in Bangladesh,<br> providing bus services across various routes in the country</p>
-          <button class="bg-[#1DD100] text-[20px] font-semibold px-[21px] py-[20px] rounded-[12px] mt-[32px]"><a href="#ticket">Buy Tickets</a></button>
+          <button class="bg-[#1DD100] text-[20px] font-semibold px-[21px] py-[20px] rounded-[12px] mt-[32px]"><a href="#ticket-section">Buy Tickets</a></button>
       </div>
       <div class="text-center mt-[120px] mx-auto">
         <h2 class="font-semibold text-4xl">Best offers for you</h2>
@@ -93,8 +115,7 @@
       <section id="ticket-section" class="ticket bg-[#F7F8F8] border-2 border-t-[#1DD100] rounded-t-[30px] p-14 w-full mt-40">
         <div class="flex flex-col items-center">
             <h1 class="text-4xl font-bold mb-5">P.H Paribahan</h1>
-            <p>Yes, you can run unit tests and view the results directly within the app. The integrated</p>
-            <p>testing features allow for a streamlined.</p>
+            <p>We are delighted to serve you at P.H Paribahan, your trusted partner <br> in transportation solutions.  With our commitment to excellence and reliability,</p>
         </div>
         <div class="flex mt-10 mx-10">
             <div class="flex-1 bg-white rounded-xl space-y-5 p-10 ">
@@ -300,7 +321,7 @@
           </div>
           <div class="space-y-3">
               <h3>Download our app</h3>
-              <div class="flex gap-3 border-2 border-white p-1">
+              <div class="flex gap-3   ">
                   <img class="" src="images/playstore.png" alt="">
                   <div class="flex flex-col">
                       <p>GET IT ON</p>

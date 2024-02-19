@@ -20,26 +20,7 @@ border-radius: 12px;
 border-top: 2px solid rgb(29, 209, 0);
 }
 
-.bg-low {
-    background-color: #F7F8F8;
-    border-radius: 20px;
-}
-
-.bg-high {
-    background-color: #0307121A;
-    border-radius: 20px;
-}
-
-.bg-selected {
-    background-color: #1DD100;
-    border-radius: 20px;
-}
-
-.disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
+ 
 
 
 
