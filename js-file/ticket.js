@@ -14,7 +14,7 @@ function handleSeatSelection() {
         document.getElementById('error-message').classList.add('hidden');
         seat.classList.toggle('bg-selected');
         const seatName = seat.textContent;
-        const seatClass = 'Economoy'; // Assuming it's Economoyclass for all selected seats
+        const seatClass = 'Economoy';  
         const seatPrice = 550;
 
         let availableSeat = parseInt(document.getElementById('available-seats').textContent);
@@ -54,9 +54,9 @@ function handleSeatSelection() {
 
 function updateTable() {
     const tableBody = document.querySelector('.table tbody');
-    tableBody.innerHTML = ''; // Clear the table body
+    tableBody.innerHTML = ''; 
 
-    // Add selected seats' information to the table
+  
     selectedSeats.forEach(seat => {
         const row = document.createElement('tr');
         row.innerHTML = `
@@ -67,7 +67,7 @@ function updateTable() {
         tableBody.appendChild(row);
     });
 
-    // Calculate and display the total price
+   
     totalPrice = selectedSeats.reduce((total, seat) => total + seat.price, 0);
     const totalRow = document.createElement('tr');
     totalRow.innerHTML = `
@@ -107,7 +107,6 @@ function grandOffer() {
 }
 
 seats.forEach(seat => {
-    // console.log(seat);
-    // seat.nextSibling()
+    
     seat.addEventListener('click', handleSeatSelection);
 })
