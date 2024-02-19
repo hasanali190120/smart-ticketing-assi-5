@@ -84,15 +84,15 @@ function updateTable() {
 
 
 
-// function grandOffer() {
-//     let grandTotal = totalPrice;
-//     const couponText = document.getElementById('coupon-text').value;
-//     if (couponText === 'NEW15') {
-//         grandTotal -= grandTotal * 0.15;
-//         document.getElementById('error-coupon').classList.add('hidden');
-//         document.getElementById('coupon-text').classList.add('hidden');
-//         document.getElementById('coupon-btn').classList.add('hidden');
-//     }
+function grandOffer() {
+    let grandTotal = totalPrice;
+    const couponText = document.getElementById('coupon-text').value;
+    if (couponText === 'NEW15') {
+        grandTotal -= grandTotal * 0.15;
+        document.getElementById('error-coupon').classList.add('hidden');
+        document.getElementById('coupon-text').classList.add('hidden');
+        document.getElementById('coupon-btn').classList.add('hidden');
+    }
     else if (couponText === 'Couple 20') {
         grandTotal -= grandTotal * 0.2;
         document.getElementById('error-coupon').classList.add('hidden');
